@@ -1,0 +1,87 @@
+@import _mixins
+
+.bunner-top
+	background: url(../img/bg/bg-1.jpg)
+	padding-top: 30px
+	padding-bottom: 20px
+
+
+.sub-nav
+	text-transform: uppercase
+	margin-top: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0px
+		background: #6b606a
+		height: 40px
+		width: 1px
+	li
+		text-align: center
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			top: 0px
+			background: #6b606a
+			height: 40px
+			width: 1px
+		a
+			display: block
+			padding: 12px
+			&:hover
+				background: rgba(107, 96, 106, 0.51)
+				color: #fff
+			&.active
+				background: rgba(107, 96, 106, 0.51)
+				color: #fff
+
+.collections
+	$gap: 1.5%
+	padding-top: 70px
+	padding-bottom: 66px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 10px
+		transform: translateX(-50%)
+		left: 50%
+		height: 50px
+		width: 50px
+		background: url(../img/icons/section-ico.svg) 50% 50% no-repeat
+	.collections-grid
+		padding: $gap / -2
+		display: none
+		&.open
+			display: block
+		.collections-item
+			width: 25%
+			padding: $gap / 2
+			// margin-top: 0
+			// margin-bottom: $gap / 2
+			float: left
+			display: block
+			height: 280px
+			letter-spacing: 0
+			font-size: 0
+			.image-holder
+				border: 1px solid #ebebeb
+				height: 100%
+				span
+					position: absolute
+					z-index: 5
+					font: $font-stack
+					transform: translateX(-50%)
+					left: 50%
+					top: 20px
+					text-transform: uppercase
+
+			&.full-width
+				width: 50%
+			&.full-height
+				height: 560px
+		

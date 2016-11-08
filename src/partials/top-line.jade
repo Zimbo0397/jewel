@@ -2,14 +2,16 @@ section.top-line
 	.container
 		.inline-layout.col-3
 			.text-left
-				.contacts-top
+				.contacts-top.inline-layout
 					.tel 044 987-65-43
-					.ship
-						a(href="#") Доставка
+					a.ship(href="#") Доставка
+						
 			.logo-holder
-				img(src="img/icons/jewel-logo.svg", alt="img/icons/jewel-logo.svg")
+				.image-holder
+					a(href="#")
+						img(src="img/icons/jewel-logo.svg", alt="img/icons/jewel-logo.svg")
 			.text-right
-				.admin-part
+				.admin-part.inline-layout
 					.authorization
 						a(href="#") Авторизация
 					.basket
@@ -17,3 +19,22 @@ section.top-line
 							.basket-ico
 								img(src="img/icons/shopping.svg", alt="")
 								span 5
+		.main-nav
+			ul.inline-layout
+				mixin navItem(text)
+					li
+						a(href="#")= text
+				+navItem('шармы')
+				+navItem('подвески')
+				+navItem('муранки')
+				+navItem('основы')
+				+navItem('кольца')
+				+navItem('стопперы и защитные цепочки')
+				+navItem('кулоны и цепочки')
+				+navItem('серьги')
+				+navItem('упаковка')
+			.search-holder
+				.search-btn#search-btn поиск
+				.input-holder#input-holder
+					input(placeholder="поиск")
+					button(type="submit")

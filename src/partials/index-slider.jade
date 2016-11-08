@@ -1,0 +1,22 @@
+section.index-slider
+	.slider-holder
+		ul.bx-slider
+			mixin newSliderItem()
+				li.inline-layout.col-2
+					.image-col
+						.image-holder
+							img.fake-img(src='img/content/index-slide-1.png', alt='img/content/index-slide-1.png')
+							.img(style= 'background-image: url(img/content/index-slide-1.png)')
+					.text-holder
+						h4 ENAMEL, 10KT YELLOW GOLD & STERLING SILVER DAISY CHARM
+						p
+							|Add a fresh and fun element to any bracelet with this feminine daisy charm, crafted in sterling silver. The detailed design is accented with white enamel and 10kt yellow gold to create a truly beautiful piece. Exclusive to Emma & Roe.
+						.price
+							span 548
+							span.coins 90
+							span.currency грн
+			+newSliderItem
+			+newSliderItem
+			+newSliderItem
+			+newSliderItem
+			+newSliderItem

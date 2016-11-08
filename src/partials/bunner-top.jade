@@ -1,0 +1,123 @@
+mixin newcollItem(src, text, class1 )
+	a.collections-item(href="#", class= (class1) ? class1 : "")
+		.image-holder
+			span= text
+			img.fake-img(src= src, alt= src)
+			.img(style= 'background-image: url('+ src +')')
+
+section.bunner-top
+	.container
+		.main-bunner
+			.image-holder
+				img(src="img/content/bunner-1.jpg", alt="")
+		.sub-nav
+			ul.inline-layout.col-5
+				mixin menuItem(group, text, class1)
+					li
+						a.menu-item(href="", data-group= group, class= (class1) ? "active" : "")= text
+				+menuItem('group1','скоро 8 марта', 'active')
+				+menuItem('group2','весенние скидки')
+				+menuItem('group3','колекции')
+				+menuItem('group4','новинка')
+				+menuItem('group5','распродажа')
+
+section.collections
+	.container
+		#group1.collections-grid.open.clearfix
+			+newcollItem(
+				'img/content/product-group-1.jpg',
+				'шармы'
+			)
+			+newcollItem(
+				'img/content/product-group-2.jpg',
+				'подвески'
+			)
+			+newcollItem(
+				'img/content/product-group-3.jpg',
+				'стекла мурано',
+				'full-height'
+			)
+			+newcollItem(
+				'img/content/product-group-4.jpg',
+				'серьги'
+			)
+			+newcollItem(
+				'img/content/product-group-5.jpg',
+				'стопперы и защитные цепочки',
+				'full-width'
+			)
+			+newcollItem(
+				'img/content/product-group-6.jpg',
+				'основы'
+			)
+			+newcollItem(
+				'img/content/product-group-7.jpg',
+				'кольца'
+			)
+			+newcollItem(
+				'img/content/product-group-8.jpg',
+				'упаковка'
+			)
+			+newcollItem(
+				'img/content/product-group-9.jpg',
+				'кулоны и цепочки',
+				'full-width'
+			)
+		#group2.collections-grid.clearfix
+			+newcollItem(
+				'img/content/product-group-3.jpg',
+				'стекла мурано',
+				'full-height'
+			)
+			+newcollItem(
+				'img/content/product-group-4.jpg',
+				'серьги'
+			)
+			+newcollItem(
+				'img/content/product-group-5.jpg',
+				'стопперы и защитные цепочки',
+				'full-width'
+			)
+			+newcollItem(
+				'img/content/product-group-6.jpg',
+				'основы'
+			)
+		#group3.collections-grid.clearfix
+			+newcollItem(
+				'img/content/product-group-1.jpg',
+				'шармы'
+			)
+			+newcollItem(
+				'img/content/product-group-2.jpg',
+				'подвески'
+			)
+			+newcollItem(
+				'img/content/product-group-3.jpg',
+				'стекла мурано',
+				'full-height'
+			)
+			+newcollItem(
+				'img/content/product-group-4.jpg',
+				'серьги'
+			)
+		#group4.collections-grid.clearfix
+			+newcollItem(
+				'img/content/product-group-1.jpg',
+				'шармы'
+			)
+			+newcollItem(
+				'img/content/product-group-2.jpg',
+				'подвески'
+			)
+			+newcollItem(
+				'img/content/product-group-3.jpg',
+				'стекла мурано',
+				'full-height'
+			)
+		#group5.collections-grid.clearfix
+				+newcollItem(
+					'img/content/product-group-1.jpg',
+					'шармы'
+				)
+				
+

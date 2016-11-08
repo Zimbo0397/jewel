@@ -3,8 +3,7 @@
   "description": "Jewel store",
   "main": "index.html",
   "moduleType": [],
-  "keywords": [
-  ],
+  "keywords": [],
   "authors": [
     "V. Zbryzskiy"
   ],
@@ -23,6 +22,7 @@
     "jquery.browser": "latest",
     "font-awesome": "~4.5.0",
     "bxslider-4": "bx-slider.js#^4.2.5",
-    "jquery-ui": "^1.12.0"
+    "jquery-ui": "^1.12.0",
+    "masonry": "^4.1.1"
   }
 }
